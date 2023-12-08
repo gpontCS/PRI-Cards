@@ -1,0 +1,151 @@
+:root {
+  --color-background: #ffffff;
+  --color-text: #212121;
+  --color-stroke: #9e9e9e;
+  --font-size-md: 0.75rem;
+  --font-size-lg: 1rem;
+  --font-size-label: 16px;
+  --color-shadow: #222f45;
+}
+
+/*Main Body Styling*/
+body {
+  position: relative;
+  margin: 0 !important;
+  font-family: Calibri, sans-serif;
+  max-width: 100% !important;
+  background-color: var(--color-background);
+}
+
+main {
+  margin: 0 !important;
+  padding: 14px;
+  padding-inline: 1.5rem;
+  max-width: 100% !important;
+}
+
+/*Button Styling*/
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.v-export {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.bar {
+  width: 16px;
+  height: 2px;
+  background-color: #6e8192;
+  border-radius: 2px;
+  margin-top: 2px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.04);
+  bottom: -26px;
+  right: 14px;
+}
+
+.dropdown-content button {
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+.v {
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.v .controls-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.v .inner-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.v .swatches {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+}
+
+.v .swatch {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.v .swatch__symbol {
+  margin-right: 0.25rem;
+}
+
+.v .chart-container {
+  overflow-x: auto;
+}
+
+.v .chart-svg {
+  display: block;
+}
+
+.v .axis-g {
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+}
+
+.v .axis-g path,
+.v .axis-g line {
+  stroke: var(--color-stroke);
+}
+
+.v-range-bar-symbol .label-text {
+  fill: var(--color-text);
+  stroke: var(--color-background);
+  stroke-width: 2px;
+  paint-order: stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.v-range-bar-symbol .label-text--bar-label {
+  font-size: var(--font-size-md);
+}
+
+.v-range-bar-symbol .label-text--symbol-label {
+  font-size: var(--font-size-lg);
+}

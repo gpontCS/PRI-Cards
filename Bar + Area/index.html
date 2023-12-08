@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        margin: 3rem auto;
+        padding-inline: 1.5rem;
+        max-width: 90%rem;
+      }
+
+      main > * + * {
+        margin-top: 6rem;
+      }
+    </style>
+  </head>
+
+  <div id="lineAreaChart" style="height: 480px"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
+</html>
